@@ -1,0 +1,82 @@
+
+<div class="sideBar show">
+  <div class="logo-container">
+    <img  src="assets/images/logo.png" alt="Logo">
+    
+  </div>
+  <hr>
+  <ul class="list">
+    <!-- Dashboard -->
+    <li class="list-item">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="nav-link"
+      >
+        <i class="bi bi-speedometer"></i>
+        Dashboard
+      </a>
+    </li>
+
+    <!-- Trips -->
+    <li class="list-item">
+      <a
+        class="nav-link"
+        [class.hovered]="isSubmenuOpen === 'trips'"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+        (click)="toggleSubmenu('trips')"
+      >
+        <i class="bi bi-airplane-fill"></i>
+        Trips
+        <i class="bi bi-caret-down-fill"></i>
+      </a>
+      <ul class="sub-menu" [class.show]="isSubmenuOpen === 'trips'">
+        <li>
+          <a routerLink="/add-trip" routerLinkActive="active" class="nav-link"
+            >Add trip</a
+          >
+        </li>
+        <li>
+          <a routerLink="/trip-list" routerLinkActive="active" class="nav-link"
+            >Trip List</a
+          >
+        </li>
+      </ul>
+    </li>
+
+    <li class="list-item">
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        [class.hovered]="isSubmenuOpen === 'program'"
+        [routerLinkActiveOptions]="{ exact: false }"
+        (click)="toggleSubmenu('program')"
+      >
+        <i class="bi bi-calendar-week-fill"></i>
+        Program
+        <i class="bi bi-caret-down-fill"></i>
+      </a>
+      <ul class="sub-menu" [class.show]="isSubmenuOpen === 'program'">
+        <li>
+          <a
+            routerLink="/add-program"
+            routerLinkActive="active"
+            class="nav-link"
+            >Add Program</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/program-list"
+            routerLinkActive="active"
+            class="nav-link"
+            >Program List</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+

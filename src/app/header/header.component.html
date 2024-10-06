@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="right">
+    <i (click)="toggleSideBar()" class="bi bi-list"></i>
+    <div class="infos" (click)="toggle()">
+      <img src="assets/images/avatar.jpg" alt="" />
+      <small>John Doe</small>
+      <i class="bi bi-caret-down-fill"></i>
+    </div>
+    <ul class="sub-menu" [class.show]="iscCollapsed">
+      <li>
+        <i class="bi bi-person-fill"></i> Profile
+    </li>
+    
+      <li>
+          <i class="bi bi-gear-fill"></i> Setting
+      </li>
+      <li><i class="bi bi-power"></i> Log-out</li>
+    </ul>
+  </div>
+</header>

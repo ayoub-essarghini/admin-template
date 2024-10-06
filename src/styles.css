@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --side-font-size: 1.2rem;
+  --round-card-size1: 0.5rem;
+  --primary-color: #e8e2e2;
+  --black: rgb(72, 78, 91);
+  --active-color: #4169ec;
+  --side-color: #e0eef373;
+  --bg-active-color: #a5b0e049;
+  --card-shadow: 1px 1px 10px #333;
+}
+
+.section {
+  display: flex;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  
+
+}
+
+.sideBar {
+    max-width: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-width 0.2s ease-in;
+}
+
+.sideBar.show {
+  max-width: 280px;
+  left: 0;
+  padding: 0.5rem;
+}
+
