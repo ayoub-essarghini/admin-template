@@ -1,6 +1,10 @@
-<header class="header">
+<div class="header-container">
+  
+  <header class="header" [ngStyle]="{
+    'width': isSideBarcollapsed == false ? 'calc(100% - 280px)' : '100%' 
+  }">
   <div class="right">
-    <i (click)="toggleSideBar()" class="bi bi-list"></i>
+    <i (click)="toggleSideBar()"  class="menu-btn bi bi-list"></i>
     <div class="infos" (click)="toggle()">
       <img src="assets/images/avatar.jpg" alt="" />
       <small>John Doe</small>
@@ -18,3 +22,5 @@
     </ul>
   </div>
 </header>
+</div>
+

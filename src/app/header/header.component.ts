@@ -9,11 +9,14 @@ import { SidebarserviceService } from '../sidebar/sidebarservice.service';
 export class HeaderComponent {
   iscCollapsed: boolean = false;
 
-  constructor(private sidebarService: SidebarserviceService) {}
+  isSideBarcollapsed = false;
+  constructor(private sidebarService: SidebarserviceService) {
+    
+  }
   toggleSideBar()
   {
-    this.sidebarService.toggleSidebar();  
-
+     this.sidebarService.toggleSidebar();  
+      this.isSideBarcollapsed = !this.isSideBarcollapsed;
   }
   toggle() {
     this.iscCollapsed = !this.iscCollapsed;

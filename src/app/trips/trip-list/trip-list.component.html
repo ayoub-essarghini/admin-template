@@ -1,93 +1,97 @@
 <h4 class="h4 mt-3 mx-3" style="color: rgba(84, 87, 87, 0.801)">Trips</h4>
-<input class="form-controle mb-4" type="text">
+
 
 <div class="container">
+ 
+  <div class="mt-3 inputs mb-3">
+    <i class="fa fa-search"></i>
+    <input type="text" class="form-control " placeholder="Search Trips...">
+  </div>  
   <div class="row">
-    <article class="card fl-left">
-      <section class="date">
-        <time datetime="23th feb"> <span>23</span><span>feb</span> </time>
-      </section>
-      <section class="card-cont">
-        <small>dj khaled</small>
-        <h3>live in sydney</h3>
-        <div class="even-date">
-          <i class="fa fa-calendar"></i>
-          <time>
-            <span>wednesday 28 december 2014</span>
-            <span>08:55pm to 12:00 am</span>
-          </time>
-        </div>
-        <div class="even-info">
-          <i class="fa fa-map-marker"></i>
-          <p>nexen square for people australia, sydney</p>
-        </div>
-        <a href="#">tickets</a>
-      </section>
-    </article>
-    <article class="card fl-left">
-      <section class="date">
-        <time datetime="23th feb"> <span>23</span><span>feb</span> </time>
-      </section>
-      <section class="card-cont">
-        <small>dj khaled</small>
-        <h3>corner obsest program</h3>
-        <div class="even-date">
-          <i class="fa fa-calendar"></i>
-          <time>
-            <span>wednesday 28 december 2014</span>
-            <span>08:55pm to 12:00 am</span>
-          </time>
-        </div>
-        <div class="even-info">
-          <i class="fa fa-map-marker"></i>
-          <p>nexen square for people australia, sydney</p>
-        </div>
-        <a href="#">tickets</a>
-      </section>
-    </article>
+    <div class="table-responsive">
+      <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Destination</th>
+            <th scope="col">Price</th>
+            <th scope="col">Status</th>
+            <th scope="col">Spots</th>
+            <!-- <th scope="col">Completion</th> -->
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <div class="media align-items-center">
+                <a href="#" class="card rounded-circle mr-3" >
+                  <img alt="Image placeholder" [ngStyle]="{
+                    'width': '80px' ,
+                    'border-radius': '0.5rem'
+                    
+                  }" src="assets/images/trips/kech.png  ">
+                </a>
+                <div class="media-body">
+                  <span class="mb-0 text-sm">Marrakech</span>
+                </div>
+              </div>
+            </th>
+            <td>
+              $2,500 USD
+            </td>
+            <td>
+              <span>Available </span>
+              <span class="badge badge-dot mr-4">
+                <i class="bg-success"></i> pending
+              </span>
+              
+            </td>
+            <td>
+              250 places
+            </td>
+         
+            <td class="text-right">
+              <div class="dropdown">
+                <a class="btn btn-sm btn-icon-only text-light"  role="button" data-toggle="dropdown-menu" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+       
+      
+        </tbody>
+      </table>
+      <div class="card-footer py-4">
+        <nav aria-label="...">
+          <ul class="pagination justify-content-end mb-0">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">
+                <i class="fas fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <i class="fas fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+ 
   </div>
-  <!-- <div class="row">
-    <article class="card fl-left">
-      <section class="date">
-        <time datetime="23th feb"> <span>23</span><span>feb</span> </time>
-      </section>
-      <section class="card-cont">
-        <small>dj khaled</small>
-        <h3>music kaboom festivel</h3>
-        <div class="even-date">
-          <i class="fa fa-calendar"></i>
-          <time>
-            <span>wednesday 28 december 2014</span>
-            <span>08:55pm to 12:00 am</span>
-          </time>
-        </div>
-        <div class="even-info">
-          <i class="fa fa-map-marker"></i>
-          <p>nexen square for people australia, sydney</p>
-        </div>
-        <a href="#">booked</a>
-      </section>
-    </article>
-    <article class="card fl-left">
-      <section class="date">
-        <time datetime="23th feb"> <span>23</span><span>feb</span> </time>
-      </section>
-      <section class="card-cont">
-        <small>dj khaled</small>
-        <h3>hello dubai festivel</h3>
-        <div class="even-date">
-          <i class="fa fa-calendar"></i>
-          <time>
-            <span>wednesday 28 december 2014</span>
-            <span>08:55pm to 12:00 am</span>
-          </time>
-        </div>
-        <div class="even-info">
-          <i class="fa fa-map-marker"></i>
-          <p>nexen square for people australia, sydney</p>
-        </div>
-        <a href="#">cancel</a>
-      </section>
-    </article>
-  </div> -->
+ 
 </div>

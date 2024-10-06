@@ -11,7 +11,7 @@
   --primary-color: #e8e2e2;
   --black: rgb(72, 78, 91);
   --active-color: #4169ec;
-  --side-color: #e0eef373;
+  --side-color: #dde7ebf1;
   --bg-active-color: #a5b0e049;
   --card-shadow: 1px 1px 10px #333;
 }
@@ -23,20 +23,20 @@
 
 .main {
   width: 100%;
-  
+
 
 }
 
 .sideBar {
-    max-width: 0;
-    overflow: hidden;
-    padding: 0;
-    transition: max-width 0.2s ease-in;
+  position: absolute;
+  overflow: hidden;
+  padding: 0.5rem;
+  z-index: 99;
+  transform: translateX(-280px);
+  transition: transform 0.2s ease-in;
 }
 
 .sideBar.show {
-  max-width: 280px;
-  left: 0;
-  padding: 0.5rem;
-}
 
+  transform: translateX(0);
+}
